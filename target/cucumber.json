@@ -1,0 +1,223 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T13:55:06.724Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.API_GETDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Dummy_Api_GETDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Send a valid Single Request to get user details",
+        "description": "",
+        "id": "dummy-api-for-get-method;send-a-valid-single-request-to-get-user-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Response Received \u003d\u003d {\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_name\": \"Tiger Nixon\",\n        \"employee_salary\": 320800,\n        \"employee_age\": 61,\n        \"profile_image\": \"\"\n    },\n    \"message\": \"Successfully! Record has been fetched.\"\n}"
+            ],
+            "result": {
+              "duration": 1465000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send a Single request to the URL to get user details",
+            "match": {
+              "location": "stepDefinition.Dummy_Api_GETDefinitions.sendRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 439000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response will return Single status 200 and id 1 and salary 320800 and name \"Tiger Nixon\" and age 61 and message \"Successfully! Record has been fetched.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                },
+                {
+                  "val": "1",
+                  "offset": 50
+                },
+                {
+                  "val": "320800",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Tiger Nixon\"",
+                  "offset": 79
+                },
+                {
+                  "val": "61",
+                  "offset": 101
+                },
+                {
+                  "val": "\"Successfully! Record has been fetched.\"",
+                  "offset": 116
+                }
+              ],
+              "location": "stepDefinition.Dummy_Api_GETDefinitions.verifyStatus(int,int,int,java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@GetUserDetails"
+          }
+        ]
+      }
+    ],
+    "name": "Dummy Api for get method",
+    "description": "",
+    "id": "dummy-api-for-get-method",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/GetMethod.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-22T13:55:08.674Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.API_GETDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Dummy_Api_GETDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Send a valid Request to get user details",
+        "description": "",
+        "id": "validation-of-get-method;send-a-valid-request-to-get-user-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "output": [
+              "Response Received \u003d\u003d {\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"employee_name\": \"Tiger Nixon\",\n        \"employee_salary\": 320800,\n        \"employee_age\": 61,\n        \"profile_image\": \"\"\n    },\n    \"message\": \"Successfully! Record has been fetched.\"\n}"
+            ],
+            "result": {
+              "duration": 861000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send a request to the URL to get user details",
+            "match": {
+              "location": "stepDefinition.API_GETDefinitions.sendRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response will return status 200 and id 1 and salary 320800 and name \"Tiger Nixon\" and age 61 and message \"Successfully! Record has been fetched.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                },
+                {
+                  "val": "1",
+                  "offset": 43
+                },
+                {
+                  "val": "320800",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Tiger Nixon\"",
+                  "offset": 72
+                },
+                {
+                  "val": "61",
+                  "offset": 94
+                },
+                {
+                  "val": "\"Successfully! Record has been fetched.\"",
+                  "offset": 109
+                }
+              ],
+              "location": "stepDefinition.API_GETDefinitions.verifyStatus(int,int,int,java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@GetUserDetails"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of get method",
+    "description": "",
+    "id": "validation-of-get-method",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/ValidateGetMethod.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
