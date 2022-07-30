@@ -1,5 +1,6 @@
 # CucumberApiProject
-Cucumber Api Project With Extent Reports
+Cucumber Api Project With Rest Assured and Extent Reports and Jenkins Configuration
+
 To Run the project please use below maven command
 
 clean test -DtestEnvironment=dev -Dcucumber.filter.tags="@Functional"
