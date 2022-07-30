@@ -1,3 +1,8 @@
 Runner\CucumberRunner.class
-stepDefinition\API_GETDefinitions.class
-stepDefinition\Dummy_Api_GETDefinitions.class
+utils\URL.class
+utils\EnvironmentSetup.class
+utils\TestUtils.class
+model\UserInfo.class
+utils\RestAssuredRequestFilter.class
+stepDefinition\ReqRes_API_Definitions.class
+stepDefinition\ReqRes_API_Definitions2.class
