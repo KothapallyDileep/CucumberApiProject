@@ -67,28 +67,6 @@ public class TestUtils {
         Assert.assertEquals(TestUtils.getContentType(response), contentType);
     }    
 
-    public static void createOutputFolder(){
-        LocalDate myObj = LocalDate.now(); // Create a date object
-        String rootdir= getProperty("user.dir");//To get the root dir
-        outputPath=rootdir+ReadProperty("outputPath")+myObj;
-        File fileDir=new File(outputPath);
-        if(fileDir.isDirectory())
-        {
-            fileDir.delete();
-        }
-        fileDir.mkdirs();
-    }
 
-    public static void createTestCaseOutputFolder(String testName){
-        LocalDate myObj = LocalDate.now(); // Create a date object
-        String rootdir= getProperty("user.dir");//To get the root dir
-        outputPath=rootdir+ReadProperty("outputPath")+myObj+"\\"+testName;
-        File fileDir=new File(outputPath);
-        if(fileDir.isDirectory())
-        {
-            fileDir.delete();
-        }
-        fileDir.mkdirs();
-    }
 
 }
